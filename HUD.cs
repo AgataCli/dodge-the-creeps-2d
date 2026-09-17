@@ -8,7 +8,7 @@ public partial class HUD : CanvasLayer
 	
 	public void ShowMessage(string text)
 	{
-		var message = GetNode<Label>("Message");
+		var message = GetNode<Label>("MessageLabel");
 		message.Text = text;
 		message.Show();
 		
@@ -22,7 +22,7 @@ public partial class HUD : CanvasLayer
 		var messageTimer = GetNode<Timer>("MessageTimer");
 		await ToSignal(messageTimer, Timer.SignalName.Timeout);
 		
-		var message = GetNode<Label>("Message");
+		var message = GetNode<Label>("MessageLabel");
 		message.Text = "Dodge the Creeps!";
 		message.Show();
 		
@@ -43,7 +43,7 @@ public partial class HUD : CanvasLayer
 	
 	private void OnMessageTimerTimeout()
 	{
-		GetNode<Label>("Message").Hide();
+		GetNode<Label>("MessageLabel").Hide();
 	}
 	
 	// Called when the node enters the scene tree for the first time.

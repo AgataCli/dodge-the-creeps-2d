@@ -36,7 +36,6 @@ curve = SubResource("Curve2D_h2yge")
 
 [node name="HUD" parent="." unique_id=125929079 instance=ExtResource("4_1bvp3")]
 
-[connection signal="Hit" from="Player" to="." method="NewGame"]
 [connection signal="Hit" from="Player" to="." method="GameOver"]
 [connection signal="timeout" from="MobTimer" to="." method="OnMobTimerTimeout"]
 [connection signal="timeout" from="ScoreTimer" to="." method="OnScoreTimerTimeout"]
