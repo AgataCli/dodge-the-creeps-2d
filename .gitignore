@@ -1,0 +1,21 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Godot 3 specific ignores
+.import/
+
+# Exported builds
+*.apk
+*.aab
+*.exe
+*.pck
+*.zip
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
